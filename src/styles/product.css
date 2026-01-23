@@ -1,0 +1,104 @@
+/* --- Global Styles for Grid --- */
+.product-grid {
+  display: grid;
+  /* Flipkart standard grid: Mobile par 2, Desktop par 4-5 */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 8px; /* Flipkart cards ke beech gap kam hota hai */
+  background: #f1f3f6; /* Gray bg taaki white cards alag dikhen */
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* --- Flipkart Style Product Card --- */
+.product-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #f0f0f0; /* Bohot halki border */
+  padding: 15px;
+  text-align: left; /* Flipkart hamesha left-align hota hai */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Glass ki jagah soft shadow */
+  transform: none; /* Retail sites par transform zyada use nahi hota */
+}
+
+/* --- Image Container (Pure & Simple) --- */
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain; /* Product image kategi nahi */
+  margin-bottom: 12px;
+}
+
+/* --- Title (Flipkart uses 14px-16px normal weight) --- */
+.product-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Title ko 1 line mein rakhega */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Pricing (Bold & Clear) --- */
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.old-price {
+  font-size: 13px;
+  color: #878787;
+  text-decoration: line-through;
+}
+
+.discount-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #388e3c; /* Flipkart Green */
+}
+
+/* --- Buy/Action Button (Solid Block) --- */
+.buy-btn {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #fb641b; /* Solid Orange */
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 2px; /* Slight square look */
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: #f4511e; /* Solid dark orange */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+

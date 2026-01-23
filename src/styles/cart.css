@@ -1,0 +1,192 @@
+/* Cart Item Row */
+.cart-item {
+  display: flex;
+  align-items: center; /* Items ko vertically center karne ke liye */
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.2s ease;
+}
+
+.cart-item:hover {
+  background: #f9fff0; /* Halka sa yellow-green tint hover par */
+}
+
+.cart-item img {
+  width: 100px; /* Thoda bada image size */
+  height: 100px;
+  object-fit: contain;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* Item Details (Title, Price etc.) */
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1b3d1e; /* Deep Green */
+  margin-bottom: 5px;
+}
+
+.cart-item-price {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Cart Summary Section */
+.cart-summary {
+  margin-top: 40px;
+  padding: 25px;
+  background: #f4f4f4; /* Light Gray base */
+  border-radius: 12px;
+  border-left: 6px solid #ccff00; /* Yellow-Green accent border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.cart-summary h3 {
+  color: #1b3d1e;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px dashed #ccc;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2e7d32; /* Classic Green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-bottom: 4px solid #ccff00; /* Yellow accent on button */
+  transition: all 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #1b3d1e;
+  transform: translateY(-2px);
+}
+
+/* Quantity Section */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.q-btn {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%; /* Circle shape */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.q-btn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.q-input {
+  width: 35px;
+  height: 28px;
+  border: 1px solid #e0e0e0;
+  margin: 0 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Remove Button - Solid Style */
+.remove-btn {
+  background: none;
+  border: none;
+  color: #212121;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 25px;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.remove-btn:hover {
+  color: #2874f0; /* Flipkart Blue on Hover */
+}
+
+/* Delivery Text */
+.delivery-info {
+  font-size: 14px;
+  min-width: 150px;
+  text-align: right;
+}
+
+/* --- Continue / Place Order Button --- */
+.continue-btn {
+  width: 100%;
+  background-color: #fb641b; /* Solid Flipkart Orange */
+  color: #ffffff; /* Contrast White Text */
+  padding: 16px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 2px; /* Slight roundness just like Flipkart */
+  cursor: pointer;
+  
+  /* Shadow for depth - isse button "uthha" hua dikhta hai */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  
+  /* Layout alignment */
+  display: block;
+  margin-top: 20px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover par solid color thoda dark hoga, transparent nahi */
+.continue-btn:hover {
+  background-color: #f4511e; 
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Jab click karein (active state) */
+.continue-btn:active {
+  background-color: #e64a19;
+  transform: translateY(1px);
+}

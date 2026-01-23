@@ -1,0 +1,57 @@
+@import "./variables.css";
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font);
+  background-color: var(--gray-100);
+  color: var(--gray-800);
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images & Videos */
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 24px 16px;
+}
+
+/* Buttons */
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+.mt-md {
+  margin-top: var(--sp-md);
+}
+.mb-md {
+  margin-bottom: var(--sp-md);
+}

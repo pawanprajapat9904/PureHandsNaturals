@@ -1,0 +1,47 @@
+:root {
+    /* Brand Colors */
+  --green: #2e7d32;
+  --green-dark: #1b5e20;
+  --yellow: #fbc02d;
+  --yellow-dark: #f9a825;
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --gray-light: #f5f5f5;
+  --border-color: #e0e0e0;
+
+    /* Grays */
+  --gray-100: #f5f5f5;
+  --gray-300: #e0e0e0;
+  --gray-600: #757575;
+  --gray-800: #424242;
+
+  --white: #ffffff;
+
+  /* Fonts */
+ --font: "Segoe UI", Roboto, Arial, sans-serif;
+  /* Font Sizes */
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+
+  /* Spacing */
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 32px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
