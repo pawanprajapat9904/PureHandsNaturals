@@ -16,8 +16,6 @@ import cds2 from "../assets/products/cds2.jpeg";
 import cds3 from "../assets/products/cds3.jpeg";
 
 // Videos
-import video1 from "../assets/products/product-1/video.mp4";
-import video2 from "../assets/products/product-2/video.mp4";
 
 // ===== PRODUCTS DATA =====
 
@@ -32,7 +30,7 @@ const products = [
     description:
       "Soft floral freshness 🌼 with the purity of nature 🤍 A gentle handmade soap that calms your skin and senses ✨",
     images: [jasmine1, jasmine2, jasmine3],
-    video: video1,
+    video: "",
     inStock: true
   },
   {
@@ -45,7 +43,7 @@ const products = [
     description:
       "Refreshing soap with tea tree oil and lemongrass for acne-free skin.",
     images: [ttl1, ttl2, ttl3],
-    video: video2,
+    video: "",
     inStock: true
   },
   {
