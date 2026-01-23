@@ -61,6 +61,11 @@ export default function Footer() {
                 💬 WhatsApp +91 7877521900
               </a>
             </li>
+            <li style={styles.listItem}>
+              <a href="https://wa.me/919875711019" target="_blank" rel="noreferrer" style={styles.link}>
+                💬 WhatsApp +91 9875711019
+              </a>
+            </li>
           </ul>
         </div>
       </div>
