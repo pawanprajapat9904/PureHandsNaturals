@@ -86,7 +86,7 @@ const products = [
   name: "PureHands Naturals Floral & Herbal Soap Set 🌸🌿",
   price: 150,
   originalPrice: 180,
-  color: ["pink", "purple", "yellow"],
+  color: `"pink", "purple", "yellow"`,
   category: "soap",
   description: [
     "Brand: PureHands Naturals",
