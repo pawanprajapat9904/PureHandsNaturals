@@ -1,23 +1,22 @@
 // ===== IMPORT IMAGES =====
 
 // Jasmine
-import jasmine1 from "../assets/products/jasmine1.png";
-import jasmine2 from "../assets/products/jasmine2.png";
+import jasmine1 from "../assets/products/jasmine-1.png";
+import jasmine2 from "../assets/products/jasmine-2.png";
 
 // Rose
-import rose1 from "../assets/products/Rose1.png";
-import rose2 from "../assets/products/Rose2.png";
+import rose1 from "../assets/products/rose-1.png";
+import rose2 from "../assets/products/rose-2.png";
 
-// sandalwood
-import sandalwood1 from "../assets/products/Sandalwood1.png";
-import sandalwood2 from "../assets/products/Sandalwood2.png";
+// Sandalwood
+import sandalwood1 from "../assets/products/sandalwood-1.png";
+import sandalwood2 from "../assets/products/sandalwood-2.png";
 
-//Sets
-
-import set1 from "../assets/products/Set1.png";
-import set2 from "../assets/products/Set2.png";
-import set3 from "../assets/products/Set3.png";
-import set4 from "../assets/products/Set4.png";
+// Sets
+import set1 from "../assets/products/set-1.png";
+import set2 from "../assets/products/set-2.png";
+import set3 from "../assets/products/set-3.png";
+import set4 from "../assets/products/set-4.png";
 
 
 
