@@ -1,21 +1,29 @@
 // ===== IMPORT IMAGES =====
 
 // Jasmine
-import jasmine1 from "../assets/products/jasmine1.jpeg";
-import jasmine2 from "../assets/products/jasmine2.jpeg";
-import jasmine3 from "../assets/products/jasmine3.jpeg";
+import jasmine1 from "../assets/products/jasmine1.png";
+import jasmine2 from "../assets/products/jasmine2.png";
 
-// Tea Tree & Lemongrass
-import ttl1 from "../assets/products/ttl1.jpeg";
-import ttl2 from "../assets/products/ttl2.jpeg";
-import ttl3 from "../assets/products/ttl3.jpeg";
+// Rose
+import rose1 from "../assets/products/Rose1.png";
+import rose2 from "../assets/products/Rose2.png";
 
-// Charcoal Detox
-import cds1 from "../assets/products/cds1.jpeg";
-import cds2 from "../assets/products/cds2.jpeg";
-import cds3 from "../assets/products/cds3.jpeg";
+// sandalwood
+import sandalwood1 from "../assets/products/Sandalwood1.png";
+import sandalwood2 from "../assets/products/Sandalwood2.png";
+
+//Sets
+
+import set1 from "../assets/products/Set1.png";
+import set2 from "../assets/products/Set2.png";
+import set3 from "../assets/products/Set3.png";
+import set4 from "../assets/products/Set4.png";
+
+
+
 
 // Videos
+
 
 // ===== PRODUCTS DATA =====
 
@@ -23,42 +31,77 @@ const products = [
   {
     id: "product-1",
     name: "JASMINE SOAP 🌼",
-    price: 99,
-    originalPrice: 159,
+    price: 50,
+    originalPrice: 80,
     color: "yellow",
     category: "soap",
-    description:
-      "Soft floral freshness 🌼 with the purity of nature 🤍 A gentle handmade soap that calms your skin and senses ✨",
-    images: [jasmine1, jasmine2, jasmine3],
+    description: [
+      "Brand: PureHands Naturals",
+      "Product Type: Handmade Natural Soap",
+      "Variant: Jasmine",
+      "Net Weight: 95-100 g",
+      "Skin Type: All skin types"
+    ],
+    images: [jasmine1, jasmine2],
     video: "",
     inStock: true
   },
+ {
+  id: "product-2",
+  name: "Rose Soap 🌹",
+  price: 50,
+  originalPrice: 80,
+  color: "pink",
+  category: "soap",
+  description: [
+    "Brand: PureHands Naturals",
+    "Product Type: Handmade Natural Soap",
+    "Variant: Rose",
+    "Net Weight: 90-100 g",
+    "Skin Type: All skin types"
+  ],
+  images: [rose1, rose2], // change if different
+  video: "",
+  inStock: true
+},
   {
-    id: "product-2",
-    name: "Tea Tree & Lemongrass Soap",
-    price: 249,
-    originalPrice: 349,
-    color: "green",
-    category: "soap",
-    description:
-      "Refreshing soap with tea tree oil and lemongrass for acne-free skin.",
-    images: [ttl1, ttl2, ttl3],
-    video: "",
-    inStock: true
-  },
-  {
-    id: "product-3",
-    name: "Charcoal Detox Soap",
-    price: 279,
-    originalPrice: 379,
-    color: "black",
-    category: "soap",
-    description:
-      "Activated charcoal soap for deep cleansing and detoxification.",
-    images: [cds1, cds2, cds3],
-    video: "",
-    inStock: true
-  }
+  id: "product-3",
+  name: "Sandalwood Soap 🌿",
+  price: 50,
+  originalPrice: 80,
+  color: "purple",
+  category: "soap",
+  description: [
+    "Brand: PureHands Naturals",
+    "Product Type: Handmade Natural Soap",
+    "Variant: Sandalwood",
+    "Net Weight: 95-100 g",
+    "Skin Type: All skin types"
+  ],
+  images: [sandalwood1, sandalwood2], // update if needed
+  video: "",
+  inStock: true
+},
+{
+  id: "product-4",
+  name: "PureHands Naturals Floral & Herbal Soap Set 🌸🌿",
+  price: 150,
+  originalPrice: 180,
+  color: ["pink", "purple", "yellow"],
+  category: "soap",
+  description: [
+    "Brand: PureHands Naturals",
+    "Product Type: Handmade Natural Soap",
+    "Variant: Rose, Sandalwood, Jasmine",
+    "Net Weight: 270-300 g",
+    "Skin Type: All skin types"
+  ],
+  images: [set1, set2, set3, set4], // update as needed
+  video: "",
+  inStock: true
+}
+
+
 ];
 
 export default products;

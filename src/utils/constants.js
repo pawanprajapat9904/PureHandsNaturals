@@ -5,4 +5,4 @@ export const CURRENCY_SYMBOL = "₹";
 
 export const APP_NAME = "Pure Hands Naturals";
 
-export const DEFAULT_BANNER_INTERVAL = 4000; // 4 seconds
+export const DEFAULT_BANNER_INTERVAL = 2500; // 4 seconds
