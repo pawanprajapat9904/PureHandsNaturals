@@ -101,7 +101,6 @@ const products = [
   inStock: true
 }
 
-
 ];
 
 export default products;
