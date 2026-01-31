@@ -18,6 +18,21 @@ import set2 from "../assets/products/set-2.png";
 import set3 from "../assets/products/set-3.png";
 import set4 from "../assets/products/set-4.png";
 
+// Rose Grape
+import rosegrape1 from "../assets/products/rosegrape-1.png";
+import rosegrape2 from "../assets/products/rosegrape-2.png";
+import rosegrape3 from "../assets/products/rosegrape-3.png";
+
+
+// Jasmine Grape
+import jasminegrape1 from "../assets/products/jasminegrape-1.png";
+import jasminegrape2 from "../assets/products/jasminegrape-2.png";
+import jasminegrape3 from "../assets/products/jasminegrape-3.png";
+
+// Sandalwood Grape
+import sandalwoodgrape1 from "../assets/products/sandalwoodgrape-1.png";
+import sandalwoodgrape2 from "../assets/products/sandalwoodgrape-2.png";
+import sandalwoodgrape3 from "../assets/products/sandalwoodgrape-3.png";
 
 
 
@@ -68,8 +83,8 @@ const products = [
   name: "Sandalwood Soap 🌿",
   price: 50,
   originalPrice: 80,
-  color: "purple",
-  category: "soap",
+  color: "purple ",
+  category: "soap ",
   description: [
     "Brand: PureHands Naturals",
     "Product Type: Handmade Natural Soap",
@@ -86,7 +101,7 @@ const products = [
   name: "PureHands Naturals Floral & Herbal Soap Set 🌸🌿",
   price: 150,
   originalPrice: 180,
-  color: `"pink", "purple", "yellow"`,
+  color: `"pink ", "purple ", "yellow "`,
   category: "soap",
   description: [
     "Brand: PureHands Naturals",
@@ -98,7 +113,64 @@ const products = [
   images: [set1, set2, set3, set4], // update as needed
   video: "",
   inStock: true
+},
+{
+  id: "product-5",
+  name: "PureHands Naturals Rose Grape Soap 🌹🍇",
+  price: 150,
+  originalPrice: 250,
+  color: "pink",
+  category: `"hand ", "wash ", "soap "`,
+  description: [
+    "Brand: PureHands Naturals",
+    "Product Type: Handmade Natural Grape Soap",
+    "Variant: Rose",
+    "Net Weight: 250-300 g",
+    "Best For: Gifting"
+  ],
+  images: [rosegrape1, rosegrape2, rosegrape3], 
+  video: "",
+  inStock: true
+},
+{
+  id: "product-jasmine-grape-soap",
+  name: "PureHands Naturals Jasmine Grape Soap 🌼🍇",
+  price: 150,
+  originalPrice: 250,
+  color: "purple",
+  category: `"hand ", "wash ", "soap "`,
+  description: [
+    "Brand: PureHands Naturals",
+    "Product Type: Handmade Natural Grape Soap",
+    "Variant: Jasmine",
+    "Net Weight: 250-300 g",
+    "Best For: Gifting"
+  ],
+  images: [jasminegrape1, jasminegrape2,jasminegrape3], // update with actual image imports
+  video: "",
+  inStock: true
+},
+{
+  id: "product-sandalwood-grape-soap",
+  name: "PureHands Naturals Sandalwood Grape Soap 🌿🍇",
+  price: 150,
+  originalPrice: 250,
+  color: "yellow",
+  category: `"hand ", "wash ", "soap "`,
+  description: [
+    "Brand: PureHands Naturals",
+    "Product Type: Handmade Natural Grape Soap",
+    "Variant: Sandalwood",
+    "Net Weight: 250-300 g",
+    "Best For: Gifting"
+  ],
+  images: [sandalwoodgrape1, sandalwoodgrape2,sandalwoodgrape3], // update with actual image imports
+  video: "",
+  inStock: true
 }
+
+
+
 
 ];
 

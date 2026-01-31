@@ -2,12 +2,16 @@
 :root {
   --primary-color: #ccff00;
   --dark-bg: #0d1a0e;
-  --transition-smooth: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* 🎥 Softer & smoother animation */
+  --transition-smooth: all 1.2s ease-in-out;
 }
+
+/* ================= HERO SLIDER ================= */
 
 .hero-slider {
   width: 100%;
-  height: clamp(400px, 40vw, 600px); /* Height screen size ke hisaab se scale hogi */
+  height: clamp(400px, 40vw, 600px);
   position: relative;
   background: var(--dark-bg);
   overflow: hidden;
@@ -17,17 +21,19 @@
 .slide {
   position: absolute;
   inset: 0;
+
+  /* Soft fade + slight zoom */
   opacity: 0;
-  transition: var(--transition-smooth);
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: opacity 1.2s ease, transform 1.4s ease;
   visibility: hidden;
 }
 
 .slide.active {
   opacity: 1;
   transform: scale(1);
-  z-index: 1;
   visibility: visible;
+  z-index: 1;
 }
 
 .slide img {
@@ -35,16 +41,18 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 3s ease; /* subtle image motion */
 }
 
-/* --- Gradient Overlay: Tablet/Mobile Friendly --- */
+/* ================= OVERLAY ================= */
+
 .slide-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    90deg, 
-    rgba(13, 26, 14, 0.95) 0%, 
-    rgba(13, 26, 14, 0.7) 40%, 
+    90deg,
+    rgba(13, 26, 14, 0.95) 0%,
+    rgba(13, 26, 14, 0.7) 40%,
     transparent 100%
   );
   display: flex;
@@ -53,25 +61,33 @@
   z-index: 2;
 }
 
+/* Soft text reveal */
 .slide-content {
   max-width: min(90%, 750px);
   color: #fff;
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-/* --- Responsive Typography using CLAMP --- */
+.slide.active .slide-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= TEXT ================= */
+
 .badge {
   color: var(--primary-color);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
-  /* Fluid font: min 12px, scales with width, max 15px */
   font-size: clamp(0.75rem, 1vw, 0.9rem);
   display: block;
   margin-bottom: 1rem;
 }
 
 .slide-content h1 {
-  /* Fluid Title: Mobile 2.2rem -> Desktop 4.5rem */
   font-size: clamp(2.2rem, 5vw + 1rem, 4.5rem);
   font-weight: 900;
   line-height: 1.1;
@@ -81,26 +97,27 @@
 }
 
 .slide-content p {
-  /* Fluid Text: Mobile 0.9rem -> Desktop 1.4rem */
   font-size: clamp(0.9rem, 1.2vw + 0.2rem, 1.4rem);
   color: #d1d1d1;
   margin-bottom: 2.5rem;
   line-height: 1.5;
 }
 
-/* --- Responsive Buttons --- */
+/* ================= BUTTONS ================= */
+
 .slide-actions {
   display: flex;
   gap: 1.2rem;
-  flex-wrap: wrap; /* Mobile par buttons niche aa jayenge agar space kam hoga */
+  flex-wrap: wrap;
 }
 
-.banner-btn, .banner-btn-secondary {
+.banner-btn,
+.banner-btn-secondary {
   padding: clamp(12px, 2vw, 16px) clamp(24px, 4vw, 40px);
   font-weight: 800;
   text-decoration: none;
   border-radius: 4px;
-  transition: 0.3s ease;
+  transition: all 0.4s ease;
   text-transform: uppercase;
   font-size: clamp(0.8rem, 1vw, 1rem);
   display: inline-block;
@@ -117,10 +134,20 @@
   color: #fff;
 }
 
-.banner-btn:hover { background: #fff; border-color: #fff; }
-.banner-btn-secondary:hover { background: #fff; color: var(--dark-bg); }
+.banner-btn:hover {
+  background: #fff;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
 
-/* --- Controls (Arrows & Dots) --- */
+.banner-btn-secondary:hover {
+  background: #fff;
+  color: var(--dark-bg);
+  transform: translateY(-2px);
+}
+
+/* ================= CONTROLS ================= */
+
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -136,10 +163,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: all 0.4s ease;
 }
 
-.nav-btn:hover { background: var(--primary-color); color: var(--dark-bg); }
+.nav-btn:hover {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  transform: translateY(-50%) scale(1.05);
+}
+
 .prev { left: 2%; }
 .next { right: 2%; }
 
@@ -157,32 +189,42 @@
   height: 4px;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  transition: 0.4s;
+  transition: all 0.5s ease;
 }
 
-.dot.active { background: var(--primary-color); width: clamp(40px, 6vw, 60px); }
+.dot.active {
+  background: var(--primary-color);
+  width: clamp(40px, 6vw, 60px);
+}
 
-/* --- Specific Responsive Breakpoints --- */
+/* ================= MOBILE & TABLET ================= */
 
 @media (max-width: 768px) {
+
   .hero-slider {
-    height: 500px; /* Thoda kam height mobile ke liye */
+    height: 500px;
   }
-  
+
+  /* 🎯 80–90% RIGHT IMAGE FOCUS */
+  .slide img {
+    object-position: 85% center;
+  }
+
   .slide-overlay {
-    /* Mobile pe gradient vertical kar diya taaki text ke piche dark base rahe */
     background: linear-gradient(
-      to top, 
-      rgba(13, 26, 14, 1) 0%, 
-      rgba(13, 26, 14, 0.4) 60%, 
+      to top,
+      rgba(13, 26, 14, 1) 0%,
+      rgba(13, 26, 14, 0.5) 60%,
       transparent 100%
     );
     align-items: flex-end;
-    padding-bottom: 80px;
+    padding: 0 6% 80px;
   }
 
-  .nav-btn { display: none; } /* Mobile par arrows ki zarurat nahi hoti */
-  
+  .nav-btn {
+    display: none;
+  }
+
   .slider-dots {
     left: 50%;
     transform: translateX(-50%);
