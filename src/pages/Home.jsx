@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   // 🔥 sirf featured products (first 4)
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = products.slice(1,6);
 
   return (
     <>
